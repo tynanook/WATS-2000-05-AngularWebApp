@@ -1,11 +1,10 @@
 <div class="jumbotron">
-  <h1>Ahoy Matey!</h1>
+  <h1>'Allo, 'Allo!</h1>
   <p class="lead">
     <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    <!--Always a pleasure scaffolding your apps.-->
-May your anchor be tight, your cork be loose, your rum be spiced and your compass true.
+    Always a pleasure scaffolding your apps.
   </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#/">Yo Ho Ho!&nbsp;<span class="glyphicon glyphicon-fire"></span></a></p>
+  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
 </div>
 
 
@@ -28,9 +27,13 @@ May your anchor be tight, your cork be loose, your rum be spiced and your compas
 -->
 
 <div ng-app ng-init="firstnum=1;secondnum=2">
-  <h1>Do Some Addition!</h1>
-  <input type="number" min"0" ng-model="firstnum"/> +  <input type="number" min"0" ng-model="secondnum"/> = <b>{{firstnum + secondnum}}</b>
-  <br>
+<h1>Do Some Addition!</h1>
+<input type="number" min"0" ng-model="firstnum"/>
+ +  
+<input type="number" min"0" ng-model="secondnum"/>
+ =
+<b>{{firstnum + secondnum}}</b>
+<br>
 </div>
 
 
