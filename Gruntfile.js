@@ -17,6 +17,8 @@ module.exports = function (grunt) {
     useminPrepare: 'grunt-usemin',
     ngtemplates: 'grunt-angular-templates',
     cdnify: 'grunt-google-cdn'
+    // 20160301 - ty added following 1 line:
+    buildcontrol: 'grunt-build-control'
   });
 
   // Configurable paths for the application
@@ -30,6 +32,26 @@ module.exports = function (grunt) {
 
     // Project settings
     yeoman: appConfig,
+
+
+    // 20160301 - ty added following 14 lines:
+    buildcontrol: {
+      options: {
+        dir: 'dist',
+        commit: true,
+        push: true,
+        message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
+      },
+      pages: {
+        options: {
+          remote: 'git@github.com:tynanook/WATS-2000-05-AngularWebApp.git',
+          branch: 'gh-pages'
+        }
+      }
+    },
+
+
+
 
     // Watches files for changes and runs tasks based on the changed files
     watch: {
